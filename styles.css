@@ -1,0 +1,491 @@
+body {
+    background-color: #F7FBF9;
+    margin: 0;
+    font-family: sans-serif;
+}
+
+*:visited {
+    color: inherit;
+}
+
+*, *:after, *:before {
+	box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+nav a:hover, footer a:hover {
+    transform: scale(125%);
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Mulish&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mulish&family=Roboto+Slab&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Archivo:wght@500&display=swap');
+
+/*Tout ce qui concerne le header*/
+
+nav li {
+	list-style: none;
+	display: inline;
+	margin: 0 20px;
+    font-family: 'Mulish', sans-serif;
+    font-size: 115%;
+}
+
+.headWrap {
+    display: flex;
+    background-color: #D1EDE2;
+    align-items: center;
+    height: 125px;
+    width: 100%;
+    margin-bottom: 20px;
+    border-bottom: solid 1px #8b9e96db;
+    z-index: 99999;
+    position: fixed;
+}
+
+nav {
+    flex-grow: 1;
+    text-align: center;
+}
+
+nav ul {
+    padding: 0;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+    position: relative;
+    display: inline-block;
+    transition: all 0.25s;
+}
+
+main {
+    padding-top: 150px;
+}
+
+/* Tout ce qui concerne le footer */
+
+footer {
+    display: flex;
+    background-color: #13404F;
+    align-items: center;
+    justify-content: space-around;
+    border-top: solid 3px white;
+    font-family: 'Roboto Slab', serif;
+    z-index: 51;
+    position: absolute;
+    width: 100%;
+}
+
+footer a {
+    text-decoration: none;
+}
+
+footer a:hover {
+    cursor: pointer;
+}
+
+.col1 {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.col2 {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+}
+
+.col3 {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.col3 a p {
+    display: inline-block;
+}
+
+footer p, i {
+    color: white;
+    text-align: center;
+}
+
+footer label {
+    color: white;
+    text-align: center;
+    margin-bottom: 2%;
+}
+
+footer input::placeholder {
+    font-size: 125%;
+}
+
+.midRow {
+    font-size: 2.125em;
+    transition: all 0.25s;
+}
+
+form {
+    text-align: center;
+}
+
+input {
+    border-radius: 5px;
+    margin-bottom: 2vh;
+    padding: 1%;
+    border: 0;
+    font-family: 'Roboto Slab', serif;
+}
+
+button {
+    cursor: pointer;
+    font-family: 'Roboto Slab', serif;
+    padding: 1% 3% 1%;
+    font-size: 105%;
+}
+
+footer a, footer a p {
+    transition: all 0.25s;
+}
+
+.col1 div {
+    display: inline-block;
+    height: 50px;
+    vertical-align: middle;
+}
+
+.botRow p:hover {
+    transform: scale(125%);
+}
+
+.topRow p {
+    margin-top: 16px;
+}
+
+.scroll2Top {
+    position: sticky;
+    bottom: 5%;
+    left: 95%;
+    width: 50px;
+    height: 50px;
+    z-index: 51;
+    background-color: #12404F;
+    border-radius: 50px;
+}
+
+footer .uil {
+    color: #D1EDE2;
+}
+
+.uil-angle-up, .uil-angle-up::before, .uil-angle-up::after {
+    font-size: 1.7679em;
+}
+
+
+/* Tout ce qui concerne le main de la première page */
+
+.titreCateg {
+    display: flex;
+    width: 50%;
+}
+
+.titreCateg h2 {
+    color: white;
+    text-align: center;
+    background-color: #13404F;
+    padding: 1% 2% 1%;
+    font-family: 'Mulish', sans-serif;
+    margin-bottom: 0;
+    border-radius: 10px;
+}
+
+.Categ {
+    width: 65%;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    flex-direction: column;
+    margin-bottom: 5vh;
+}
+
+.cartesCateg {
+    width: 65%;
+    display: flex;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    flex-wrap: wrap;
+}
+
+.carte {
+    padding: 2%;
+    width: 300px;
+    height: 350px;
+    background-color: white;
+    margin: 0 3% 6%;
+    border-radius: 25px;
+    box-shadow: 0 0 5px 1px rgb(208, 208, 208);
+}
+
+.appelRess {
+    background-color: #D1EDE2;
+    height: 300px;
+    width: 100%;
+    margin-bottom: 5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.uil-phone, .uil-phone::before, .uil-phone::after {
+    font-size: 3.1em;
+}
+
+
+.phonetransform {
+    transition: all 0.75s;
+}
+
+.phonetransform:hover {
+    transform: scale(115%) rotate(0.05turn);
+}
+
+.contRess {
+    width: 225px;
+    height: 225px;
+    display: inline-block;
+    background-color: #12404F;
+    border-radius: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 1;
+
+}
+
+.appelRess p {
+    width: 55%;
+    text-align: center;
+    font-family: "Roboto", Sans-serif;
+    color: #1F487E;
+    font-weight: 600;
+    font-size: large;
+    padding-left: 125px;
+}
+
+.imgCarte {
+    width: 250px;
+}
+
+.carte h3 {
+    margin-top: auto;
+}
+
+.page-hidden {
+    position: absolute;
+    background-color: whitesmoke;
+    width: 100%;
+    height: 230%;
+    z-index: 50;
+    top: 120px;
+    bottom: 160px;
+    display: none;
+}
+
+#pageRess:target {
+    display: flex;
+    flex-direction: column;
+}
+
+#pageRess h1 {
+    text-align: center;
+    padding-top: 5vh;
+}
+
+#pageRess p {
+    width: 75%;
+    line-height: 1.5;
+}
+
+#pageRess p strong {
+    font-weight: normal;
+    text-decoration: underline;
+}
+
+.top-page-ress {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.uil-times-circle, .uil-times-circle::before {
+    font-size: 2em;
+    color: #13404F;
+    margin-left: 10px;
+    margin-top: 10px;
+    position: fixed;
+    display: flex;
+}
+
+.uil-times-circle:hover, .uil-times-circle:hover::before {
+    color: red;
+}
+
+table {
+    text-align: center;
+    line-height: 3;
+    margin-top: 50px;
+}
+
+td {
+    padding: 2% 2%;
+    line-height: 1.5;
+    width: 50%;
+}
+
+.trvert {
+    background-color: #E6F6F0;
+}
+
+/* Tout ce qui concerne le main de la seconde page */
+
+.page-top-contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.page-top-contact img {
+    width: 350px;
+    height: auto;
+    transition: all ease-in-out 0.5s;
+    margin-top: 15px;
+}
+
+.page-top-contact img:hover {
+    transform: scale(110%) rotate(0.025turn);
+    cursor: none;
+}
+
+.page-top-contact p {
+    width: 50%;
+    line-height: 2;
+    text-align: center;
+    font-family: 'Mulish', sans-serif;
+    padding: 10px 0;
+}
+
+.form-contact {
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+.form-contact input {
+    padding: 0;
+    height: 30px;
+    width: 100%;
+    border: solid 1px #13404fc3;
+}
+
+.form-contact input::placeholder {
+    padding-left: 1%;
+}
+
+.form-contact label {
+    text-align: left;
+    margin-bottom: 2.5%;
+}
+
+.bloc-form {
+    display: flex;
+    flex-direction: column;
+    width: 15%;
+    margin: 0  3%;
+}
+
+.nom-forms {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    justify-content: center;
+    align-content: center;
+}
+
+.mail-forms {
+    width: 36%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+}
+
+#objetForm, input#objetAutre {
+    margin:1% 0 2%;
+    font-family: 'Mulish', sans-serif;
+    font-size: 110%;
+}
+
+.form-contact button {
+    width: 10%;
+    padding: 0;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 2%;
+}
+
+.form-contact textarea {
+    width: 36%;
+    margin-left: auto;
+    margin-right: auto;
+    resize: none;
+    margin-bottom: 2%;
+    font-family: "Roboto", Sans-serif;
+    font-size: 105%;
+}
+
+/* Tout ce qui concerne le main de la troisième page */
+
+.construction-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.w-i-p {
+    margin-top: 25px;
+}
+
+.w-i-p img {
+    width: 150px;
+    margin-bottom: 125px;
+}
+
+a#back2page {
+    text-decoration: none;
+    font-family: 'Archivo', sans-serif;
+    font-size: 150%;
+    border-radius: 30px;
+    color: white;
+    background-color: #13404F;
+    padding: 10px;
+    border-radius: 30px;
+    transition: all 0.5s;
+}
+
+a#back2page:hover {
+    background-color: #1F487E;
+    font-size: 200%;
+}
